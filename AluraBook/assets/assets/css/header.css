@@ -5,9 +5,19 @@
     background-image: url(../img/Menu.svg);
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: center;        
+    background-position: center;
+    position: relative;   
+        
 
+} 
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
+
 
 .container{
     display: flex;
@@ -16,4 +26,14 @@
 }
 .container__imagem{
     padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
 }
