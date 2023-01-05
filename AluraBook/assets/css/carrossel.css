@@ -68,3 +68,8 @@ padding: 1em;
     font-weight: 700;
     text-decoration: none;
 }
+.descricao__titulo-estrela{
+    color: var(--laranja);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
