@@ -1,11 +1,12 @@
 .cabecalho__menu--hamburguer {
 
     width: 40px;
-    height:24px;
+    height: 40px;
     background-image: url(../img/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block; 
+    padding: 0.5em;
     
 } 
 .container__botao:checked ~.container__rotulo>.cabecalho__menu--hamburguer{
@@ -13,7 +14,6 @@
 }
 .container__botao:checked~.container__rotulo{
     background: var(--azul-degrade);
-    padding: 0.5em;
 }
 
 .cabecalho {
@@ -38,7 +38,7 @@
     display: none;
     position: absolute;
     top:100%;
-    width: 50vw;
+    width: 60vw;
 }
 
 .container__botao:checked~.lista-menu{
