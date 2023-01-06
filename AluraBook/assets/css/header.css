@@ -1,22 +1,21 @@
 .cabecalho__menu--hamburguer {
 
     width: 40px;
-    height:40px;
+    height:24px;
     background-image: url(../img/Menu.svg);
-    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;   
+    display: inline-block; 
+    
 } 
 .container__botao:checked ~.container__rotulo>.cabecalho__menu--hamburguer{
     background-image: url("../img/Menu Aberto.svg");
 }
 .container__botao:checked~.container__rotulo{
     background: var(--azul-degrade);
+    padding: 0.5em;
 }
-.menu {
-    cursor: pointer;/* minha adição*/
-}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -44,6 +43,7 @@
 
 .container__botao:checked~.lista-menu{
     display: block;
+    z-index: 10;
 }
 .lista-menu__titulo, .lista-menu__item{
     padding: 1em;
